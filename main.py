@@ -6,6 +6,7 @@ Space	Letter separator
 /	Word separator
 #	Untranslatable character
 """
+
 from flask import Flask, render_template
 from morse_code import *
 from forms import InputForm

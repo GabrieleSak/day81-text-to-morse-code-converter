@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<h3>Convert text to Morse Code</h3>
 <div class="container">
     <form method="POST" action="/">
         {{ form.csrf_token }}
@@ -10,6 +11,14 @@
 </form>
 
 </div>
+
+<ul>
+    <li><b> - </b> Dash (dahs) </li>
+    <li><b> . </b> Dot (dits) </li>
+    <li><b> Space </b> Letter separator </li>
+    <li><b> / </b> Word separator </li>
+    <li><b> # </b> Untranslatable character </li>
+</ul>
 
 
 
