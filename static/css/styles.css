@@ -1,59 +1,85 @@
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #E3F4F4;
+html {
+    height: 100%;
 }
 
-h3 {
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #3C3F41;
+
+}
+
+h1 {
+font-family: 'Oswald', sans-serif;
+font-size: 3em;
 text-align: center;
-color: #272727;
+color: #F8F6F4;
 }
 
 form {
     margin: 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center ;
 }
 
+.container {
+width: 90%;
+margin: 0 auto;
+ max-width: 800px;
+ padding: 30px;
+ background-color: #F8F6F4;
+
+}
+
 .button {
-    margin: 50px;
-    background-color: #CCCCCF;
+    margin: 0 3em;
+    background-color: #7149C6;
     outline: none;
     cursor: pointer;
     border: 1px solid transparent;
      padding: 3px 40px 3px 40px;
-     font-size: 14px;
+     font-size: 16px;
      min-height: 48px;
      color: #fff;
      text-align: center;
 }
 
-.button:hover {
-         background-color: #C4DFDF;
+.button:hover, .button:focus {
+         opacity: 0.75;
      }
 
 
+
+
 .box {
-outline: none;
+    outline: none;
     font-weight: 300;
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.5;
-    color: #272727;
-    border: 0;
-    box-shadow: 0 1px 3px 0 rgba(0,0,0,.14);
-    border-radius: 2px;
-    background: #fff;
+    color: #3C3F41;
+    border: 1px solid #3C3F41;
+    background: #F8F6F4;
     height:200px;
-    width: 300px;
+    width: 100%;
     background-color: #F8F6F4;
 }
 
 ul {
     list-style-type:none;
-    font-weight: 100;
+    font-weight: 400;
     line-height: 1.5;
-    font-size: 14px;
+    font-size: 16px;
+    color: #3C3F41;
 }
 
+@media (max-width: 800px) {
+  form {
+    flex-direction: column;
+  }
+  .button {
+    margin: 3em;
+  }
+}
 
 

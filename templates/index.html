@@ -1,25 +1,25 @@
 {% extends 'base.html' %}
 
 {% block content %}
-<h3>Convert text to Morse Code</h3>
+<h1>CONVERT TEXT TO MORSE CODE</h1>
+
 <div class="container">
     <form method="POST" action="/">
         {{ form.csrf_token }}
-            {{ form.input_text(class="box") }}
+        {{ form.input_text(class="box") }}
         {{ form.submit(class="button") }}
         {{form.output_text(class="box")}}
-</form>
+    </form>
+
+
+    <ul>
+        <li><b> - </b> Dash (dahs)</li>
+        <li><b> . </b> Dot (dits)</li>
+        <li><b> Space </b> Letter separator</li>
+        <li><b> / </b> Word separator</li>
+        <li><b> # </b> Untranslatable character</li>
+    </ul>
 
 </div>
-
-<ul>
-    <li><b> - </b> Dash (dahs) </li>
-    <li><b> . </b> Dot (dits) </li>
-    <li><b> Space </b> Letter separator </li>
-    <li><b> / </b> Word separator </li>
-    <li><b> # </b> Untranslatable character </li>
-</ul>
-
-
 
 {% endblock %}
